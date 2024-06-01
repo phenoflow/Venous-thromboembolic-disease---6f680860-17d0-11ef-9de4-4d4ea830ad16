@@ -2,7 +2,7 @@
 
 import sys, csv, re
 
-codes = [{"code":"107023.0","system":"readv2"},{"code":"101655.0","system":"readv2"},{"code":"19562.0","system":"readv2"},{"code":"102776.0","system":"readv2"},{"code":"102777.0","system":"readv2"},{"code":"5614.0","system":"readv2"},{"code":"17847.0","system":"readv2"},{"code":"104290.0","system":"readv2"},{"code":"106566.0","system":"readv2"}];
+codes = [{"code":"ZV12811","system":"readv2"},{"code":"ZV12800","system":"readv2"},{"code":"107023.0","system":"readv2"},{"code":"101655.0","system":"readv2"},{"code":"19562.0","system":"readv2"},{"code":"102776.0","system":"readv2"},{"code":"102777.0","system":"readv2"},{"code":"5614.0","system":"readv2"},{"code":"17847.0","system":"readv2"},{"code":"104290.0","system":"readv2"},{"code":"106566.0","system":"readv2"}];
 REQUIRED_CODES = 1;
 with open(sys.argv[1], 'r') as file_in, open('venous-thromboembolic-disease-potential-cases.csv', 'w', newline='') as file_out:
     csv_reader = csv.DictReader(file_in)
