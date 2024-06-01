@@ -15,7 +15,7 @@ inputModule4:
   path: python/venous-thromboembolic-disease-excl-pe-thrombosis---primary.py
 inputModule5:
   class: File
-  path: python/venous-thromboembolic-disease-excl-pe-transverse---primary.py
+  path: python/venous-thromboembolic-disease-excl-pe-history---primary.py
 inputModule6:
   class: File
   path: python/venous-thromboembolic-disease-excl-pe-phlebitis---primary.py
@@ -60,25 +60,25 @@ inputModule19:
   path: python/renal-venous-thromboembolic-disease-excl-pe---primary.py
 inputModule20:
   class: File
-  path: python/venous-thromboembolic-disease-excl-pe-administration---primary.py
+  path: python/venous-thromboembolic-disease-excl-pe-transverse---primary.py
 inputModule21:
   class: File
-  path: python/nonpyogenic-venous-thromboembolic-disease-excl-pe---primary.py
+  path: python/venous-thromboembolic-disease-excl-pe-administration---primary.py
 inputModule22:
   class: File
-  path: python/internal-venous-thromboembolic-disease-excl-pe---primary.py
+  path: python/nonpyogenic-venous-thromboembolic-disease-excl-pe---primary.py
 inputModule23:
   class: File
-  path: python/venous-thromboembolic-disease-excl-pe-sinus---primary.py
+  path: python/internal-venous-thromboembolic-disease-excl-pe---primary.py
 inputModule24:
   class: File
-  path: python/cerebral-venous-thromboembolic-disease-excl-pe---primary.py
+  path: python/venous-thromboembolic-disease-excl-pe-sinus---primary.py
 inputModule25:
   class: File
-  path: python/venous---primary.py
+  path: python/cerebral-venous-thromboembolic-disease-excl-pe---primary.py
 inputModule26:
   class: File
-  path: python/venous-thromboembolic-disease-excl-pe-history---primary.py
+  path: python/venous---primary.py
 inputModule27:
   class: File
   path: python/venous-thromboembolic-disease-excl-pe-buddchiari---primary.py

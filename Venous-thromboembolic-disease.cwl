@@ -44,8 +44,8 @@ steps:
       potentialCases:
         id: potentialCases
         source: nervous-venous-thromboembolic-disease-excl-pe---primary/output
-  venous-thromboembolic-disease-excl-pe-transverse---primary:
-    run: venous-thromboembolic-disease-excl-pe-transverse---primary.cwl
+  venous-thromboembolic-disease-excl-pe-history---primary:
+    run: venous-thromboembolic-disease-excl-pe-history---primary.cwl
     out:
     - output
     in:
@@ -65,7 +65,7 @@ steps:
         source: inputModule6
       potentialCases:
         id: potentialCases
-        source: venous-thromboembolic-disease-excl-pe-transverse---primary/output
+        source: venous-thromboembolic-disease-excl-pe-history---primary/output
   venous-thromboembolic-disease-excl-pe-level---primary:
     run: venous-thromboembolic-disease-excl-pe-level---primary.cwl
     out:
@@ -209,8 +209,8 @@ steps:
       potentialCases:
         id: potentialCases
         source: venous-thromboembolic-disease-excl-pe-iliac---primary/output
-  venous-thromboembolic-disease-excl-pe-administration---primary:
-    run: venous-thromboembolic-disease-excl-pe-administration---primary.cwl
+  venous-thromboembolic-disease-excl-pe-transverse---primary:
+    run: venous-thromboembolic-disease-excl-pe-transverse---primary.cwl
     out:
     - output
     in:
@@ -220,6 +220,17 @@ steps:
       potentialCases:
         id: potentialCases
         source: renal-venous-thromboembolic-disease-excl-pe---primary/output
+  venous-thromboembolic-disease-excl-pe-administration---primary:
+    run: venous-thromboembolic-disease-excl-pe-administration---primary.cwl
+    out:
+    - output
+    in:
+      inputModule:
+        id: inputModule
+        source: inputModule21
+      potentialCases:
+        id: potentialCases
+        source: venous-thromboembolic-disease-excl-pe-transverse---primary/output
   nonpyogenic-venous-thromboembolic-disease-excl-pe---primary:
     run: nonpyogenic-venous-thromboembolic-disease-excl-pe---primary.cwl
     out:
@@ -227,7 +238,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule21
+        source: inputModule22
       potentialCases:
         id: potentialCases
         source: venous-thromboembolic-disease-excl-pe-administration---primary/output
@@ -238,7 +249,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule22
+        source: inputModule23
       potentialCases:
         id: potentialCases
         source: nonpyogenic-venous-thromboembolic-disease-excl-pe---primary/output
@@ -249,7 +260,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule23
+        source: inputModule24
       potentialCases:
         id: potentialCases
         source: internal-venous-thromboembolic-disease-excl-pe---primary/output
@@ -260,7 +271,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule24
+        source: inputModule25
       potentialCases:
         id: potentialCases
         source: venous-thromboembolic-disease-excl-pe-sinus---primary/output
@@ -271,21 +282,10 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule25
-      potentialCases:
-        id: potentialCases
-        source: cerebral-venous-thromboembolic-disease-excl-pe---primary/output
-  venous-thromboembolic-disease-excl-pe-history---primary:
-    run: venous-thromboembolic-disease-excl-pe-history---primary.cwl
-    out:
-    - output
-    in:
-      inputModule:
-        id: inputModule
         source: inputModule26
       potentialCases:
         id: potentialCases
-        source: venous---primary/output
+        source: cerebral-venous-thromboembolic-disease-excl-pe---primary/output
   venous-thromboembolic-disease-excl-pe-buddchiari---primary:
     run: venous-thromboembolic-disease-excl-pe-buddchiari---primary.cwl
     out:
@@ -296,7 +296,7 @@ steps:
         source: inputModule27
       potentialCases:
         id: potentialCases
-        source: venous-thromboembolic-disease-excl-pe-history---primary/output
+        source: venous---primary/output
   output-cases:
     run: output-cases.cwl
     out:
